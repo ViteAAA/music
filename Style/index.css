@@ -31,7 +31,8 @@ body {
 
 
 .container {
-    max-width: 1600px;
+    max-width: 1570px;
+    padding: 0 30px;
     margin: 0 auto;
 }
 
@@ -39,7 +40,8 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .header-list {
@@ -90,6 +92,9 @@ header .container {
     letter-spacing: 0.04em;
     text-align: center;
     color: #f3f3f3;
+}
+.banner__title span {
+    display: block;
 }
 
 .banner-play {
@@ -182,4 +187,40 @@ header .container {
 
 .about-biography__text {
     max-width: 294px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+    .banner__title {
+        font-size: 180px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .banner__title {
+        font-size: 150px;
+    }
+    .banner-play-btn {
+        max-width: 305px;
+    }
+    .about-biography-author {
+        white-space: normal;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .banner__title {
+        font-size: 80px;
+    }
+    .banner-play__text {
+        font-size: 15px;
+    }
 }
