@@ -29,9 +29,317 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+button:hover {
+    opacity: 0.8;
+}
+
+.modal-container {
+    background: rgba(4, 4, 4, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.modal-container_block {
+    background: #2a2631;
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    padding: 50px 40px;
+    box-sizing: border-box;
+}
+
+.modal-container_block_close {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.modal-container_block_registration_title {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    color: #f3f3f3;
+}
+
+.modal-container_block_input-container {
+    position: relative;
+}
+
+.modal-container_block_input-container span {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 342px;
+    height: 56px;
+    background: linear-gradient(90deg, #6621E7 0%, #9C7FFF 100%);
+    border-radius: 100px;
+    z-index: 0;
+}
+
+.modal-container_block_input-container-username span {
+    height: 55px;
+}
+
+.modal-container_block_registration_name, .modal-container_block_registration_email {
+    background: #ebe8ff;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #040404;
+}
+
+.modal-container_block_registration_name::placeholder, .modal-container_block_registration_email::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #040404;
+}
+
+.modal-container_block_registration_name:focus, .modal-container_block_registration_email:focus {
+    outline: none;
+}
+
+.modal-container_block_registration_email {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.modal-container_block_registration_checkbox-container {
+    display: flex;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.modal-container_block_input-checkbox-container {
+    position: relative;
+}
+
+.modal-container_block_registration_checkbox-container input {
+    margin-right: 10px;
+    /* margin-left: 5.5px; */
+    margin-top: 4px;
+    width: 24px;
+    height: 24px;
+    background: #ebe8ff;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    /* transform: scale(1.848); */
+    position: relative;
+    z-index: 1;
+    appearance: none;
+    /* width: 24px;
+    height: 24px; */
+}
+
+.modal-container_block_registration_checkbox-container input:checked {
+    appearance: auto;
+}
+
+.modal-container_block_input-checkbox-container span {
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    position: absolute;
+    top: 3px;
+    left: -1px;
+    background: linear-gradient(90deg, #6621E7 0%, #9C7FFF 100%);
+    z-index: 0;
+}
+
+.modal-container_block_registration_checkbox-container label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #f3f3f3;
+}
+
+.registration-checkbox-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #b0b0b0;
+    display: block;
+}
+
+.modal-container_block_submit {
+    background: linear-gradient(0deg, #7f42fa 0%, #9e83ff 100%);
+    width: 100%;
+    border-radius: 100px;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: #f3f3f3;
+    text-align: center;
+}
+
+.modal-container_block_registration_question {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: #f3f3f3;
+}
+
+.modal-container_block_registration_login {
+    margin-top: 5px;
+    border: none;
+    background: none;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: #f3f3f3;
+}
+
+.modal-container_block_login_title {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    color: #f3f3f3;
+}
+
+.modal-container_block_input-container {
+    position: relative;
+}
+
+.modal-container_block_input-container span {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 342px;
+    height: 56px;
+    background: linear-gradient(90deg, #6621E7 0%, #9C7FFF 100%);
+    border-radius: 100px;
+    z-index: 0;
+}
+
+.modal-container_block_input-container-username span {
+    height: 55px;
+}
+
+.modal-container_block_login_name, .modal-container_block_login_password {
+    background: #ebe8ff;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #040404;
+}
+
+.modal-container_block_login_name::placeholder, .modal-container_block_login_password::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #040404;
+}
+
+.modal-container_block_login_name:focus, .modal-container_block_login_password:focus {
+    outline: none;
+}
+
+.modal-container_block_login_password {
+    margin-top: 20px;
+}
+
+.modal-container_block_login_forgot-password {
+    border: none;
+    background: none;
+    margin-top: 5px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    width: 100%;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    color: #828282;
+}
+
+.modal-container_block_submit {
+    background: linear-gradient(0deg, #7f42fa 0%, #9e83ff 100%);
+    width: 100%;
+    border-radius: 100px;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: #f3f3f3;
+    text-align: center;
+}
+
+.modal-container_block_login_question {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: #f3f3f3;
+}
+
+.modal-container_block_login_register {
+    margin-top: 5px;
+    border: none;
+    background: none;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: #f3f3f3;
+}
 
 .container {
-    max-width: 1570px;
+    max-width: 1540px;
     padding: 0 30px;
     margin: 0 auto;
 }
@@ -63,7 +371,7 @@ header .container {
     color: #f3f3f3;
 }
 
-.header__btn {
+.header_btn {
     background: linear-gradient(0deg, #7f42fa 0%, #9e83ff 100%);
     border: none;
     border-radius: 100px;

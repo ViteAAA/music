@@ -3,13 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style/fonts/lato.css">
     <link rel="stylesheet" href="Style/index.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="modal-container">
+        <div class="modal-container_block">
+            <img src="images/svg/cLose.svg" alt="cLose" class="modal-container_block_close">
+            <div class="modal-container_block_registration">
+                <form action="#" method="post" id="registration-form">
+                    <h1 class="modal-container_block_registration_title">
+                        Вход или регистрация
+                    </h1>
+                    <div class="modal-container_block_input-container modal-container_block_input-container-username">
+                        <input type="text" name="username" class="modal-container_block_registration_name" autocomplete="username" required placeholder="Имя">
+                        <span></span>    
+                    </div>
+                    <div class="modal-container_block_input-container">
+                        <input type="email" name="email" class="modal-container_block_registration_email" autocomplete="email" required placeholder="E-mail">
+                        <span></span>
+                    </div>
+                    <div class="modal-container_block_registration_checkbox-container">
+                        <div class="modal-container_block_input-checkbox-container">
+                            <input type="checkbox" class="modal-container_block_registration_agree" id="registration-checkbox" required name="registration-checkbox">
+                            <span></span>
+                        </div>
+                        <div>
+                            <label for="registration-checkbox">
+                                Настоящим я даю согласие на обработку персональных данных
+                            </label>
+                            <a class="registration-checkbox-subtitle" href="#">Политика обработки персональных данных</a>
+                        </div>
+                    </div>
+                    <button class="modal-container_block_submit" type="submit">
+                        Зарегистрироваться
+                    </button>
+                    <p class="modal-container_block_registration_question">
+                        Уже есть аккаунт?
+                    </p>
+                    <button class="modal-container_block_registration_login">
+                        Войти
+                    </button>
+                </form>
+            </div>
+            <div class="modal-container_block_login">
+                <form action="#" method="post" id="login-form">
+                    <h1 class="modal-container_block_login_title">
+                        Вход или регистрация
+                    </h1>
+                    <div class="modal-container_block_input-container modal-container_block_input-container-username">
+                        <input type="text" name="username" class="modal-container_block_login_name" autocomplete="username" required placeholder="Имя">
+                        <span></span>    
+                    </div>
+                    <div class="modal-container_block_input-container">
+                        <input type="password" name="password" class="modal-container_block_login_password" autocomplete="current-password" required placeholder="Пароль">
+                        <span></span>
+                    </div>
+                    <button class="modal-container_block_login_forgot-password">
+                        Забыли пароль?
+                    </button>
+                    <button class="modal-container_block_submit" type="submit">
+                        Войти
+                    </button>
+                    <p class="modal-container_block_login_question">
+                        У вас ещё нет аккаунта?
+                    </p>
+                    <button class="modal-container_block_login_register">
+                        Зарегистрироваться
+                    </button>
+                </form>
+            </div>
+            <div class="modal-container_block_password">
+                
+            </div>
+            <div class="modal-container_block_success-login">
+                
+            </div>
+            <div class="modal-container_block_cabinet">
+                
+            </div>
+            <div class="modal-container_block_subscription">
+                
+            </div>
+            <div class="modal-container_block_change">
+                
+            </div>
+            <div class="modal-container_block_success-change">
+                
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container">
             <nav>
@@ -20,7 +104,7 @@
                 </ul>
             </nav>
             <a href="#"><img src="images/svg/logo.svg" alt="logo"></a>
-            <button class="header__btn">
+            <button class="header_btn">
                 Войти
             </button>
         </div>
@@ -79,5 +163,6 @@
             </section>
         </div>
     </main>
+    <script src="Js/script.js"></script>
 </body>
 </html>
