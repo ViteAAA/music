@@ -183,3 +183,255 @@ header .container {
 .about-biography__text {
     max-width: 294px;
 }
+.begin-of-music-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+.begin-of-music-block h1{
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 40px;
+
+}
+.begin-of-music-block h2{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 5px;
+
+}
+.begin-of-music-block h3{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.music-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 100px 50px ;
+}
+.current-track{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.track-stats{
+    margin-bottom: 20px;
+}
+.track-stats img{
+    width: 90%;
+}
+.track-stats h3,span{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+
+
+.track-stats span{
+    color: #B0B0B0;
+}
+.track-text-stats{
+    margin-top: 30px;
+}
+.track-text-stats h3{
+    margin-bottom: 5px;
+}
+.time-info{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.progress-container{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.progress-range{
+    height: 16px;
+    width: 100%;
+    margin: 10px 0;
+    appearance: none;
+    background: transparent;
+    outline: none;
+    overflow: hidden;
+    accent-color: #c56fff;
+    border-radius: 50px;
+}
+.progress-range::-webkit-slider-thumb {
+    height: 16px;
+    width: 16px;
+    background:#7F42FA;
+    appearance: none;
+    
+    /*box-shadow: -1000px 100px 0 1000px #7F42FA;*/
+    border-image:
+    linear-gradient(90deg, #7F42FA 50%, #B0B0B0 0)
+    0 1 /
+    calc(50% - 3px)
+    100vw/0 100vw;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: -5px;
+    position: relative;
+    z-index: 1;
+}
+.progress-range::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    background:#7F42FA;
+    box-shadow: - 10px 0 0 1000px #7F42FA;
+    appearance: none;
+    cursor: pointer;
+}
+.progress-range::-webkit-slider-runnable-track {
+    height: 6px;
+    background: #e0e0e0; /* Цвет незаполненной части */
+    border-radius: 3px;
+}
+.player-controls{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.other-btns{
+    background: none;
+    border: none;
+}
+.volume-container{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.volume-container img{
+    margin-right: 14px;
+    margin-left: 14px;
+}
+.list-of-tracks{
+    color: white;
+}
+.list-object{
+    width: 40vw;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.left-inform{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.track-img{
+    margin-right:20px;
+    margin-left: 20px;
+}
+.inform-characteristicks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:first baseline;
+}
+.right-inform{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-inform-img{
+    margin-right: 20px;
+}
+.block-track span{
+    color: #828282;
+}
+.block-track span.album-name-list{
+    color: #555555;
+
+}
+.block-track .right-inform img{
+    display: none;
+}
+.subscribe-window{
+    background-color: #7F42FA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe-window-text{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: #F3F3F3;
+
+
+}
+.subscribe-window-button{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 100px;
+    border: 1px solid;
+    border-image-source: linear-gradient(0.8deg, #6621E7 58.37%, #9C7FFF 99.31%);
+
+
+
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: right;
+    padding: 50px 160px;
+}

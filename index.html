@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/fonts/lato.css">
     <title>Document</title>
 </head>
 <body>
@@ -77,7 +78,165 @@
                     </div>
                 </div>
             </section>
+            <section>
+                <article class="begin-of-music-block">
+                    <h1>Музыка</h1>
+                    <h2>Альбом</h2>
+                    <h3>[ Мелодия баса ]</h3>
+                </article>
+                <article class="music-block">
+                    <div class="current-track">
+                        <div class="track-stats">
+                            <img src="images/png/musicBlock/title.png" alt="">
+                            <div class="track-text-stats">
+                                <h3>Название трека</h3>
+                                <span>Мелодия баса</span>
+                            </div>
+                        </div>
+                        <div class="time-info">
+                            <span id="current-time">0:00</span>
+                            <span id="total-time">3:29</span>
+                        </div>
+                        <div class="progress-container">
+                            <input type="range" class="progress-range" min="0" max="100" value="0">
+                        </div>
+                        <div class="player-controls">
+                            <button class="control-btn other-btns" id="again-btn">
+                                <img src="images/svg/music block/AgainTrackButton.svg" alt="">
+                            </button>
+                            <button class="control-btn other-btns" id="prev-btn">
+                                <img src="images/svg/music block/PrevTrackButton.svg" alt="">
+                            </button>
+                            <button class="control-btn other-btns">
+                                <img src="images/svg/music block/PlayButton.svg" alt="">
+                            </button>
+                            <button class="control-btn other-btns" id="next-btn">
+                                <img src="images/svg/music block/NextTrackButton.svg" alt="">
+                            </button>
+                            <button class="control-btn other-btns" id="playlist-again-btn">
+                                <img src="images/svg/music block/AgainPlaylistButton.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="volume-container">
+                            <img src="images/svg/music block/MinusVolumeButton.svg" alt="понижай">
+                            <input type="range" class="progress-range">
+                            <img src="images/svg/music block/PlusVolumeButton.svg" alt="повышай">
+                        </div>
+                    </div>
+                    <div class="list-of-tracks">
+                        <ul>
+                            <li class="list-object">
+                                <div class="left-inform">
+                                    <span>1</span>
+                                    <img src="images/png/musicBlock/mini-title.png" alt="обложка 1" class="track-img">
+                                    <div class="inform-characteristicks">
+                                        <span class="track-name-list">Название трека</span>
+                                        <span class="album-name-list">Мелодия баса</span>
+                                    </div>
+                                </div>
+                                <div class="right-inform">
+                                    <img src="images/svg/music block/ShareIconButton.svg" alt="поделиться" class="right-inform-img">
+                                    <span>0:00</span>
+                                </div>
+                            </li>
+                            <li class="list-object block-track">
+                                <div class="left-inform">
+                                    <span>2</span>
+                                    <img src="images/png/musicBlock/mini-title-blocked.png" alt="обложка 1" class="track-img">
+                                    <div class="inform-characteristicks">
+                                        <span class="track-name-list">Название трека</span>
+                                        <span class="album-name-list">Мелодия баса</span>
+                                    </div>
+                                </div>
+                                <div class="right-inform">
+                                    <img src="images/svg/music block/ShareIconButton.svg" alt="поделиться" class="right-inform-img">
+                                    <span class="block-time-length">0:00</span>
+                                </div>
+                            </li>
+                            <li class="list-object block-track">
+                                <div class="left-inform">
+                                    <span>3</span>
+                                    <img src="images/png/musicBlock/mini-title-blocked.png" alt="обложка 1" class="track-img">
+                                    <div class="inform-characteristicks">
+                                        <span class="track-name-list">Название трека</span>
+                                        <span class="album-name-list">Мелодия баса</span>
+                                    </div>
+                                </div>
+                                <div class="right-inform">
+                                    <img src="images/svg/music block/ShareIconButton.svg" alt="поделиться" class="right-inform-img no-share-img">
+                                    <span>0:00</span>
+                                </div>
+                            </li>
+                            <li class="list-object block-track">
+                                <div class="left-inform">
+                                    <span>4</span>
+                                    <img src="images/png/musicBlock/mini-title-blocked.png" alt="обложка 1" class="track-img">
+                                    <div class="inform-characteristicks">
+                                        <span class="track-name-list">Название трека</span>
+                                        <span class="album-name-list">Мелодия баса</span>
+                                    </div>
+                                </div>
+                                <div class="right-inform">
+                                    <img src="images/svg/music block/ShareIconButton.svg" alt="поделиться" class="right-inform-img no-share-img">
+                                    <span>0:00</span>
+                                </div>
+                            </li>
+                            <li class="list-object block-track">
+                                <div class="left-inform">
+                                    <span>5</span>
+                                    <img src="images/png/musicBlock/mini-title-blocked.png" alt="обложка 1" class="track-img">
+                                    <div class="inform-characteristicks">
+                                        <span class="track-name-list">Название трека</span>
+                                        <span class="album-name-list">Мелодия баса</span>
+                                    </div>
+                                </div>
+                                <div class="right-inform">
+                                    <img src="images/svg/music block/ShareIconButton.svg" alt="поделиться" class="right-inform-img no-share-img">
+                                    <span>0:00</span>
+                                </div>
+                            </li>
+                            <li class="list-object block-track">
+                                <div class="left-inform">
+                                    <span>6</span>
+                                    <img src="images/png/musicBlock/mini-title-blocked.png" alt="обложка 1" class="track-img">
+                                    <div class="inform-characteristicks">
+                                        <span class="track-name-list">Название трека</span>
+                                        <span class="album-name-list">Мелодия баса</span>
+                                    </div>
+                                </div>
+                                <div class="right-inform">
+                                    <img src="images/svg/music block/ShareIconButton.svg" alt="поделиться" class="right-inform-img no-share-img">
+                                    <span>0:00</span>
+                                </div>
+                            </li>
+                            <li class="list-object block-track">
+                                <div class="left-inform">
+                                    <span>7</span>
+                                    <img src="images/png/musicBlock/mini-title-blocked.png" alt="обложка 1" class="track-img">
+                                    <div class="inform-characteristicks">
+                                        <span class="track-name-list">Название трека</span>
+                                        <span class="album-name-list">Мелодия баса</span>
+                                    </div>
+                                </div>
+                                <div class="right-inform">
+                                    <img src="images/svg/music block/ShareIconButton.svg" alt="поделиться" class="right-inform-img no-share-img">
+                                    <span>0:00</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article></article>
+            </section>
         </div>
     </main>
+    <section class="subscribe-window">
+        <p class="subscribe-window-text">Доступен самый яркий отрывок трека. Оформите подписку, чтобы слушать все треки без ограничений</p>
+        <button class="subscribe-window-button">Оформить подписку</button>
+    </section>
+    <footer>
+        <img src="images/svg/logo.svg" alt="logo">
+        <p>© 2025,  Все права защищены</p>
+    </footer>
 </body>
 </html>
